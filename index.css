@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    margin-bottom: 0;
+    font-weight: 800;
+    font-size: 40px;
+    font-family: "Karla", sans-serif;
+}
+
+p {
+    margin: 5px 0 10px 0;
+    font-size: 20px;
+}
+span {
+    color: #4adf86;
+}
+
+#options-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#length-options{
+    font-size: 20px;
+}
+
+#password-length-value{
+    font-size: 20px;
+}
+
+#password-btn {
+    background-color: #12b981;
+    color: white;
+    margin: 30px 0 30px 0x;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#password-btn:hover {
+    background-color: #12b981d7;
+}
+#password-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}   
+
+
+.password {
+
+    padding: 8px 16px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #4adf86;
+    background-color: #273549;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 180px;
+    height: 32px;
+
+}
+
+.password:hover {
+    background-color: #31435c;
+}
+
+#character-options {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toggle-container {
+  padding: 12px 20px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+
+  color: #4adf86;
+  background: #273549;
+  border-radius: 16px;
+  font-size: 16px;
+  width: 220px;
+  height: 56px;
+
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.toggle-container:hover {
+  background-color: #31435c;
+}
+
+.toggle {
+  display: none;
+}
+
+.custom-checkbox {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: #1e88e5;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.custom-checkbox::after {
+  content: "✓";
+  color: white;
+  font-size: 20px;
+  line-height: 1;
+  display: none;
+}
+
+.toggle:checked + .custom-checkbox::after {
+  display: block;
+}

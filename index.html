@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <h1>Generate a <span class="green">random password</span></h1>
+        <p>Never use an insecure password again.</p>
+        <div id="options-container">
+            <div id="password-options">
+                <div id="length-options">
+                        <!-- <label for="password-length">Select password length (between 1 and 20):</label>
+                        <input type="range" id="password-length" name="password-length" min="1" max="20"  value="15"> -->
+                        <!-- <p id="password-length-value"></p> -->
+                        <label for="password-length">
+                            <span>Password Length</span>
+                            <p id="password-length-value"></p>
+                            <input 
+                                type="range" 
+                                id="password-length" 
+                                name="password-length" 
+                                min="1" 
+                                max="20"  
+                                value="15"
+                            >
+                        </label>
+                </div>
+            </div>
+                <div id="character-options">
+                    <label class="toggle-container" for="letters-toggle">
+                        <span>Letters</span>
+                        <input 
+                            type="checkbox" 
+                            id="letters-toggle" 
+                            class="toggle" 
+                            name="letters-toggle" 
+                            value="letters-on" 
+                            checked
+                        >
+                        <span class="custom-checkbox"></span>
+                    </label>
+                    <label class="toggle-container" for="numbers-toggle">
+                        <span>Numbers</span>
+                        <input 
+                            type="checkbox" 
+                            id="numbers-toggle" 
+                            class="toggle" 
+                            name="numbers-toggle" 
+                            value="numbers-on" 
+                            checked
+                        >
+                        <span class="custom-checkbox"></span>
+                    </label>
+
+                    <label class="toggle-container" for="symbols-toggle">
+                        <span>Symbols</span>
+                        <input 
+                            type="checkbox" 
+                            id="symbols-toggle" 
+                            class="toggle" 
+                            name="symbols-toggle" 
+                            value="symbols-on" 
+                            checked
+                        >
+                        <span class="custom-checkbox"></span>
+                    </label>
+                </div>
+        </div>
+        <button id="password-btn">Generate Password</button>
+        <div id="password-container">
+            <p id="password1" class="password"></p>
+            <p id="password2" class="password"></p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
